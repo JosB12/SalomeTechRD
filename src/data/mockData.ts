@@ -1,3 +1,5 @@
+import ejemploPdf from '@/assets/docs/estatutosEjemplo.pdf';
+
 // Mock Users
 export const mockUsers = [
   {
@@ -173,7 +175,7 @@ export const mockLessons = [
     moduleId: 1,
     title: 'Evolución de la Pedagogía en el Siglo XXI',
     type: 'video',
-    content: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    content: 'https://www.youtube.com/embed/GlOp7YJusjE',
     duration: 15,
     order: 1
   },
@@ -204,7 +206,7 @@ export const mockLessons = [
     moduleId: 1,
     title: 'La Neurociencia y su Impacto en la Pedagogía',
     type: 'video',
-    content: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    content: 'https://www.youtube.com/embed/Nb0LncTywvk',
     duration: 18,
     order: 3
   },
@@ -213,16 +215,17 @@ export const mockLessons = [
     moduleId: 2,
     title: 'Aprendizaje Basado en Proyectos',
     type: 'video',
-    content: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    content: 'https://www.youtube.com/embed/gUZ3FxhxpnI',
     duration: 22,
     order: 1
   },
+  
   {
     id: 5,
     moduleId: 2,
     title: 'Aula Invertida: Fundamentos y Aplicación',
     type: 'pdf',
-    content: 'https://example.com/aula-invertida.pdf',
+    content: ejemploPdf, // Ahora esto será una URL resuelta por el bundler
     duration: 25,
     order: 2
   },
